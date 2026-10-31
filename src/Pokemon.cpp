@@ -51,7 +51,8 @@ bool Pokemon::estaDesmaiado() {
 }
 
 Golpe Pokemon::getGolpe(int indice) {
-    if (indice < 0 || indice >= (int)golpes.size()) {
+    int total = golpes.size();
+    if (indice < 0 || indice >= total) {
         throw EntradaInvalidaException("golpe inexistente");
     }
     return golpes[indice];
