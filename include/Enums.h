@@ -17,19 +17,9 @@ enum class CategoriaGolpe {
     ESPECIAL  // usa ataqueEspecial / defesaEspecial
 };
 
-// Acoes possiveis em um turno de batalha
-enum class Acao {
-    ATACAR,
-    TROCAR,
-    USAR_ITEM,
-    FUGIR
-};
-
 // Estados do jogo
 enum class EstadoJogo {
     MENU,
-    EXPLORANDO,
-    EM_BATALHA,
     VITORIA,
     DERROTA
 };
