@@ -11,7 +11,6 @@ private:
     Jogador jogador;
     EstadoJogo estado;
 
-    Pokemon criarPokemon(std::string especie, int nivel);
     void escolherInicial();
     void andarNaGrama();
     void desafiarLider();
@@ -20,6 +19,7 @@ private:
 
 public:
     Jogo(std::string nomeJogador);
+    static Pokemon criarPokemon(std::string especie, int nivel);
     void executar();
 };
 

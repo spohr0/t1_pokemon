@@ -8,8 +8,17 @@ Integrante: Bernardo Spohr
 
 ## Como rodar
 
-make
-./pokemon
+Versão de terminal:
+
+    make
+    ./pokemon
+
+Versão gráfica (biblioteca raylib, já incluída na pasta `raylib/`, para macOS):
+
+    make grafico
+    ./pokemon_grafico
+
+Controles da versão gráfica: setas para escolher, Enter para confirmar, Backspace para voltar do menu de golpes.
 
 
 ## Como jogar

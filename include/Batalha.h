@@ -11,7 +11,6 @@ private:
     TreinadorNPC& oponente;
     bool selvagem;   //true = Pokemon selvagem (pode capturar e fugir)
 
-    int calcularDano(Pokemon& atacante, Pokemon& defensor, Golpe golpe);
     void atacar(Pokemon& atacante, Pokemon& defensor, Golpe golpe);
     void oponenteAtaca();
     void mostrarStatus();
@@ -19,6 +18,8 @@ private:
 public:
     Batalha(Jogador& j, TreinadorNPC& o, bool ehSelvagem);
     ResultadoBatalha executar();
+    static int calcularDano(Pokemon& atacante, Pokemon& defensor, Golpe golpe);
+
 };
 
 #endif
